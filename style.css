@@ -88,4 +88,15 @@ header {
 .text-box h1 {
 	font-size: 5rem;
 	font-weight: 700;
+	margin-bottom: 2.8rem;
+}
+.text-box ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2.8rem;
+}
+.text-box ul li {
+	font-size: 2.6rem;
+	font-weight: 500rem;
 }
