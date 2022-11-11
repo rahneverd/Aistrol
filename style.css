@@ -49,10 +49,13 @@ header {
 .shop-area {
 	display: flex;
 	flex-direction: column;
+	gap: 1.2rem;
+	width: 35.1rem;
 	align-items: center;
+}
+.align-center {
 	justify-content: flex-end;
 	min-width: 23.8rem;
-	gap: 1.2rem;
 }
 .btn {
 	display: inline-block;
@@ -79,7 +82,7 @@ header {
 }
 .hero-section {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 2fr 3fr;
 }
 .text-box {
 	display: flex;
@@ -99,4 +102,24 @@ header {
 .text-box ul li {
 	font-size: 2.6rem;
 	font-weight: 500rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 2.2rem;
+}
+.text-box ul li img {
+	width: 3.4rem;
+	height: 2.4rem;
+}
+.text-box ul .shop-area .btn {
+	min-width: 35.1rem;
+}
+.img-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.img-box img {
+	width: 100%;
 }
