@@ -19,7 +19,7 @@ main {
 	padding: 2.3rem 7rem 0 7rem;
 }
 header {
-	width: 129.6rem;
+	width: 150rem;
 	height: 10.5rem;
 	margin: 0 auto;
 	display: flex;
@@ -47,6 +47,13 @@ header {
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 2rem;
+}
+.off {
+	display: block;
+	font-weight: 700;
+	font-size: 3rem;
+	min-width: 35rem;
+	color: #e8282f;
 }
 .shop-area {
 	display: flex;
@@ -250,4 +257,7 @@ header {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	font-size: 2rem;
+}
+.footer-section .rights {
+	padding: 0 0;
 }

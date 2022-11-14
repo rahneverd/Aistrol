@@ -9,12 +9,21 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="queries.css" />
 		<title>Document</title>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+		></script>
 	</head>
 	<body>
 		<main>
 			<section class="upper-section">
-				<header>
+				<header class="header">
 					<img
 						class="logo-4"
 						src="img/Alistrol logo 4.svg"
@@ -32,6 +41,12 @@
 						<a href="#" class="btn"><span>Order now</span></a>
 						<span class="guarantee">60 Day Money Back Guarantee</span>
 					</div>
+
+					<!-- Mobile Navigation Button -->
+					<button class="btn-mobile-nav" id="btn-mobile-nav">
+						<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+						<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+					</button>
 				</header>
 				<section class="hero-section">
 					<div class="text-box">
@@ -152,5 +167,27 @@
 				</footer>
 			</section>
 		</main>
+		<script>
+			// let navButton = document.getElementById('btn-mobile-nav');
+			// navButton.click(function () {
+			// 	if (
+			// 		document
+			// 			.getElementsByClassName('header')
+			// 			.classList.contains('nav-open')
+			// 	) {
+			// 		document
+			// 			.getElementsByClassName('header')
+			// 			.classList.remove('nav-open');
+			// 	} else {
+			// 		document.getElementsByClassName('header').classList.add('nav-open');
+			// 	}
+			// });
+			const btnNavEl = document.querySelector('.btn-mobile-nav');
+			const headerEl = document.querySelector('.header');
+
+			btnNavEl.addEventListener('click', function () {
+				headerEl.classList.toggle('nav-open');
+			});
+		</script>
 	</body>
 </html>
