@@ -12,11 +12,11 @@ body {
 }
 main {
 	position: relative;
-	width: 144rem;
-	margin: 0 auto;
 }
 .upper-section {
 	padding: 2.3rem 7rem 0 7rem;
+	width: 144rem;
+	margin: 0 auto;
 }
 header {
 	width: 129.6rem;
@@ -218,7 +218,7 @@ header {
 .footer-menu {
 	display: flex;
 	padding: 0 9.6rem;
-	width: 100%;
+	width: 144rem;
 	list-style: none;
 	align-items: center;
 	justify-content: space-between;
