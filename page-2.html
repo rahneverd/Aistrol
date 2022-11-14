@@ -9,12 +9,21 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style-2.css" />
+		<link rel="stylesheet" href="queries.css" />
 		<title>Document</title>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+		></script>
 	</head>
 	<body>
 		<main>
 			<section class="upper-section">
-				<header>
+				<header class="header">
 					<img
 						class="logo-4"
 						src="img/Alistrol logo 4.svg"
@@ -29,6 +38,11 @@
 						<li><a href="#">Refund Policy</a></li>
 					</ul>
 					<span class="off"> 10% OFF. Code: 10OFF </span>
+					<!-- Mobile Navigation Button -->
+					<button class="btn-mobile-nav" id="btn-mobile-nav">
+						<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+						<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+					</button>
 				</header>
 				<section class="shop-section">
 					<div class="product">
@@ -139,5 +153,13 @@
 				</footer>
 			</section>
 		</main>
+		<script>
+			const btnNavEl = document.querySelector('.btn-mobile-nav');
+			const headerEl = document.querySelector('.header');
+
+			btnNavEl.addEventListener('click', function () {
+				headerEl.classList.toggle('nav-open');
+			});
+		</script>
 	</body>
 </html>
